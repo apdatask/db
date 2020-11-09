@@ -1,0 +1,32 @@
+{
+  "name": "apdata/db",
+  "description": "Types, constraints and other database tools.",
+  "type": "library",
+  "license": "MIT",
+  "minimum-stability": "stable",
+  "require": {
+    "php": ">=7.2",
+    "ext-ctype": "*",
+    "doctrine/dbal": "2.*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.4"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": {
+      "*": "dist"
+    },
+    "sort-packages": true
+  },
+  "autoload": {
+    "psr-4": {
+      "Apdata\\Db\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Apdata\\Db\\Tests\\": "tests/"
+    }
+  }
+}
